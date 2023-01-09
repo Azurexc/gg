@@ -1,0 +1,7 @@
+local key = _G.Key
+local check = "https://raw.githubusercontent.com/scriptroblo1/KeySystem/main/key?key=" .. key
+if game:HttpGet(check) == "Whitelisted" then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptroblo1/ey/main/eyy"))()
+else
+game.Players.LocalPlayer:Kick("Not Whitelisted")
+end
